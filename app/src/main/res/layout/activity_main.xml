@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/park"
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/image2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle2"
+        android:layout_width="110dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/park"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="false"
+
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/rectangle2" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="455dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="LOGIN"
+        android:textAppearance="@style/AppTheme"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/rectangle1"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@+id/park"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="47dp"
+        android:background="@drawable/rectangle1" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="153dp"
+        android:layout_height="27dp"
+        android:layout_alignTop="@+id/rectangle1"
+        android:layout_alignEnd="@+id/rectangle1"
+        android:layout_alignBottom="@+id/rectangle1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginStart="207dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="REGISTER"
+        android:textAppearance="@style/register"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
