@@ -59,10 +59,13 @@ public class register extends AppCompatActivity {
                 String CarNo = carNo.getText().toString().trim();
                 if(!TextUtils.isEmpty(Username) && !TextUtils.isEmpty(Name) && !TextUtils.isEmpty(Pass) && !TextUtils.isEmpty(MobNo) && !TextUtils.isEmpty(CarNo)) {
                     sendPost(Username, Name,Pass,MobNo,CarNo);
+                    Intent intent = new Intent(register.this, com.example.smartparker.login.class);
+                    startActivity(intent);
+                }else {
+                    toast = Toast.makeText(getApplicationContext(), "Fill all details", Toast.LENGTH_LONG);
+                    toast.setMargin(50, 50);
+                    toast.show();
                 }
-
-                Intent intent = new Intent(register.this, com.example.smartparker.login.class);
-                startActivity(intent);
                 }
             }
         );
@@ -75,13 +78,18 @@ public class register extends AppCompatActivity {
                 if(response.isSuccessful()) {
                     showResponse(response.body().toString());
 //                    Log.d(TAG, "post submitted to API." + response.body().toString());
+                }else{
+                    Toast toast=Toast.makeText(getApplicationContext(),"Username registered" +
+                            "", Toast.LENGTH_SHORT);
+                    toast.setMargin(50,50);
+                    toast.show();
                 }
             }
 
             @Override
             public void onFailure(Call<Post> call, Throwable t) {
 //                Log.e(TAG, "Unable to submit post to API.");
-                Toast toast=Toast.makeText(getApplicationContext(),"Unable to submit post to API", Toast.LENGTH_SHORT);
+                Toast toast=Toast.makeText(getApplicationContext(),"Failed", Toast.LENGTH_SHORT);
                 toast.setMargin(50,50);
                 toast.show();
             }

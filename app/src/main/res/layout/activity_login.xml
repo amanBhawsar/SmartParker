@@ -42,7 +42,7 @@
         />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/usernamelogin"
         android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_centerVertical="true"
@@ -68,7 +68,7 @@
         />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passwordlogin"
         android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_centerVertical="true"
