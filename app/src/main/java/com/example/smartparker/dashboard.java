@@ -29,9 +29,9 @@ public class dashboard extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast=Toast.makeText(getApplicationContext(),"BUTTON PRESSED", Toast.LENGTH_SHORT);
-                toast.setMargin(50,50);
-                toast.show();
+//                Toast toast=Toast.makeText(getApplicationContext(),"BUTTON PRESSED", Toast.LENGTH_SHORT);
+//                toast.setMargin(50,50);
+//                toast.show();
                 Intent intent = new Intent(dashboard.this, com.example.smartparker.bookslot.class);
                 startActivity(intent);
             }
@@ -41,7 +41,7 @@ public class dashboard extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast=Toast.makeText(getApplicationContext(),"BUTTON PRESSED", Toast.LENGTH_SHORT);
+                Toast toast=Toast.makeText(getApplicationContext(),"Select Date and time", Toast.LENGTH_SHORT);
                 toast.setMargin(50,50);
                 toast.show();
                 Intent intent = new Intent(dashboard.this, com.example.smartparker.reserveslot.class);
@@ -52,9 +52,9 @@ public class dashboard extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast=Toast.makeText(getApplicationContext(),"BUTTON PRESSED", Toast.LENGTH_SHORT);
-                toast.setMargin(50,50);
-                toast.show();
+//                Toast toast=Toast.makeText(getApplicationContext(),"Timestamp of your previous parking", Toast.LENGTH_SHORT);
+//                toast.setMargin(50,50);
+//                toast.show();
                 Intent intent = new Intent(dashboard.this, com.example.smartparker.viewhistory.class);
                 startActivity(intent);
             }
@@ -63,15 +63,12 @@ public class dashboard extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast=Toast.makeText(getApplicationContext(),"BUTTON PRESSED", Toast.LENGTH_SHORT);
+                Toast toast=Toast.makeText(getApplicationContext(),"Show this at Exit point", Toast.LENGTH_SHORT);
                 toast.setMargin(50,50);
                 toast.show();
                 Intent intent = new Intent(dashboard.this, com.example.smartparker.viewprofile.class);
                 startActivity(intent);
             }
         });
-
-
-
     }
 }

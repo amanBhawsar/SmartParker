@@ -47,7 +47,6 @@ public class reserveslot extends AppCompatActivity implements View.OnClickListen
                     startActivity(intent);
                 }
             });
-
         }
 
         @Override

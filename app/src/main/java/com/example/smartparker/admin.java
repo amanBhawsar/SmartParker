@@ -80,9 +80,8 @@ public class admin extends AppCompatActivity {
     }
 
     public void showResponse(String response) {
-        Toast toast = Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT);
-
-        toast.setMargin(50, 50);
-        toast.show();
+//        Toast toast = Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT);
+//        toast.setMargin(50, 50);
+//        toast.show();
     }
 }

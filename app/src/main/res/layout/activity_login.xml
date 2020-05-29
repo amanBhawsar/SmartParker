@@ -75,7 +75,7 @@
         android:layout_marginStart="90dp"
         android:layout_below="@+id/usernamebg"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:hint="Password"
         android:textCursorDrawable="@null"
         android:textAppearance="@style/username"

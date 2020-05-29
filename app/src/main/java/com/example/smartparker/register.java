@@ -49,7 +49,7 @@ public class register extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast=Toast.makeText(getApplicationContext(),"BUTTON PRESSED", Toast.LENGTH_SHORT);
+                Toast toast=Toast.makeText(getApplicationContext(),"Submit details", Toast.LENGTH_SHORT);
                 toast.setMargin(50,50);
                 toast.show();
                 String Username = username.getText().toString();
@@ -71,7 +71,7 @@ public class register extends AppCompatActivity {
         );
     }
     public void sendPost(String Username, String Name,String Pass,String MobNo,String CarNo) {
-        mAPIService.savePost(Username, Name,Pass,MobNo,CarNo).enqueue(new Callback<Post>() {
+        mAPIService.savePost(Username,Pass,Name,MobNo,CarNo).enqueue(new Callback<Post>() {
             @Override
             public void onResponse(Call<Post> call, Response<Post> response) {
 

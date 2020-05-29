@@ -58,8 +58,9 @@ public class login extends AppCompatActivity {
                      if(Username.equals("admin")&&Pass.equals("admin")){
                          Intent intent = new Intent(login.this, com.example.smartparker.admin.class);
                          startActivity(intent);
+                     }else {
+                         sendPost(Username, Pass);
                      }
-                     sendPost(Username, Pass);
                  } else {
                      Toast toast = Toast.makeText(getApplicationContext(), "Fill all details", Toast.LENGTH_LONG);
                      toast.setMargin(50, 50);
