@@ -52,7 +52,7 @@ public class register extends AppCompatActivity {
                 Toast toast=Toast.makeText(getApplicationContext(),"BUTTON PRESSED", Toast.LENGTH_SHORT);
                 toast.setMargin(50,50);
                 toast.show();
-                String Username = username.getText().toString().trim();
+                String Username = username.getText().toString();
                 String Name = name.getText().toString().trim();
                 String Pass = pass.getText().toString().trim();
                 String MobNo = mobNo.getText().toString().trim();

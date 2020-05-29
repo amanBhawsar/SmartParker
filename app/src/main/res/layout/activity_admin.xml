@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin">
+
+    <TextView
+        android:id="@+id/mno"
+        android:layout_width="match_parent"
+        android:text="ADMIN PANEL"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/manageslots"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Manage Slots"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mno"
+        android:layout_marginTop="25dp"
+        />
+    <Button
+        android:id="@+id/paymentinfo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Payment Info"
+        android:textSize="25sp"
+        android:layout_below="@+id/manageslots"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/logoff"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="LOGOUT"
+        android:textSize="25sp"
+        android:layout_below="@+id/paymentinfo"
+        android:layout_marginTop="25dp"
+        />
+
+</RelativeLayout>
